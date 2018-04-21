@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="fjdataDataSet1" targetNamespace="http://tempuri.org/fjdataDataSet1.xsd" xmlns:mstns="http://tempuri.org/fjdataDataSet1.xsd" xmlns="http://tempuri.org/fjdataDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="fjdataConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="fjdataConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Fengji.Properties.Settings.GlobalReference.Default.fjdataConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="fj_logTableAdapter" GeneratorDataComponentClassName="fj_logTableAdapter" Name="fj_log" UserDataComponentName="fj_logTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fjdataConnectionString (Settings)" DbObjectName="fjdata.fj_log" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `sensorID`, `value`, `dt` FROM `fj_log`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="fj_sensorTableAdapter" GeneratorDataComponentClassName="fj_sensorTableAdapter" Name="fj_sensor" UserDataComponentName="fj_sensorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="fjdataConnectionString (Settings)" DbObjectName="fjdata.fj_sensor" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `name`, `channel`, `current_value` FROM `fj_sensor`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="fjdataDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="fjdataDataSet1" msprop:Generator_UserDSName="fjdataDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="fj_log" msprop:Generator_TableClassName="fj_logDataTable" msprop:Generator_TableVarName="tablefj_log" msprop:Generator_TablePropName="fj_log" msprop:Generator_RowDeletingName="fj_logRowDeleting" msprop:Generator_RowChangingName="fj_logRowChanging" msprop:Generator_RowEvHandlerName="fj_logRowChangeEventHandler" msprop:Generator_RowDeletedName="fj_logRowDeleted" msprop:Generator_UserTableName="fj_log" msprop:Generator_RowChangedName="fj_logRowChanged" msprop:Generator_RowEvArgName="fj_logRowChangeEvent" msprop:Generator_RowClassName="fj_logRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="fj_sensor" msprop:Generator_TableClassName="fj_sensorDataTable" msprop:Generator_TableVarName="tablefj_sensor" msprop:Generator_TablePropName="fj_sensor" msprop:Generator_RowDeletingName="fj_sensorRowDeleting" msprop:Generator_RowChangingName="fj_sensorRowChanging" msprop:Generator_RowEvHandlerName="fj_sensorRowChangeEventHandler" msprop:Generator_RowDeletedName="fj_sensorRowDeleted" msprop:Generator_UserTableName="fj_sensor" msprop:Generator_RowChangedName="fj_sensorRowChanged" msprop:Generator_RowEvArgName="fj_sensorRowChangeEvent" msprop:Generator_RowClassName="fj_sensorRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
